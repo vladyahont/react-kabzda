@@ -18,6 +18,7 @@ export function Select(props: SelectType) {
     return (
         <div>
             <Button variant={'outlined'}>+</Button>
+            <Button variant={'outlined'}>-</Button>
         </div>
     )
 }
