@@ -1,8 +1,5 @@
 import React, {ChangeEvent, useRef, useState} from 'react'
 
-export default {
-    title: 'input'
-}
 
 export const UncontrolledInput = () => <input/>
 

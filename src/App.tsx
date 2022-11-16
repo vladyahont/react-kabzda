@@ -13,8 +13,11 @@ import {
     GetValueOfUncontrolledInputByButtonPress,
     TrackValueOfUncontrolledInput,
     UncontrolledInput
-} from "./components/input";
+} from "./components/Input/input";
 import {Select} from "./components/Select/select";
+import {ExampleReactMemo} from "./components/React_Memo/reactMemo";
+import {DifficultCountingExample, HelpsToReactMemo, LikeUseCallback} from "./components/React_Memo/useMemo";
+import {ExampleUseState} from "./components/React_Memo/useState";
 
 export const App = () => {
 
@@ -24,6 +27,13 @@ export const App = () => {
 
     return (
         <div>
+            <ExampleUseState/>
+
+            {/*<ExampleReactMemo/>*/}
+            <DifficultCountingExample/>
+            <HelpsToReactMemo/>
+            <LikeUseCallback/>
+
             <OnOff on={onOff} onChange={(on) => setOnOff(on)}/>
             <UnControlledOnOff onChange={setOnOff}/>
 
@@ -40,12 +50,18 @@ export const App = () => {
 
             {/*<UncontrolledInput/>*/}
             {/*<TrackValueOfUncontrolledInput/>*/}
-            <GetValueOfUncontrolledInputByButtonPress/>
-            <ControlledInput/>
-            <ControlledCheckbox/>
-            <ControlledSelect/>
+            {/*<GetValueOfUncontrolledInputByButtonPress/>*/}
+            {/*<ControlledInput/>*/}
+            {/*<ControlledCheckbox/>*/}
+            {/*<ControlledSelect/>*/}
             <hr/>
-            <Select value={123} onClick={()=>{}} items={[]}/>
+            <Select value={'1'}
+                    onChange={()=>{}}
+                    items={ [
+                        {value: '1', title: 'Minsk'},
+                        {value: '2', title: 'Novo'},
+                        {value: '3', title: 'Kiev'} ] }/>
+
         </div>
     );
 }
