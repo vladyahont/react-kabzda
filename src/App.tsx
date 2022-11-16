@@ -18,6 +18,7 @@ import {Select} from "./components/Select/select";
 import {ExampleReactMemo} from "./components/React_Memo/reactMemo";
 import {DifficultCountingExample, HelpsToReactMemo, LikeUseCallback} from "./components/React_Memo/useMemo";
 import {ExampleUseState} from "./components/React_Memo/useState";
+import {ExampleUseEffect} from "./components/React_Memo/useEffect";
 
 export const App = () => {
 
@@ -27,6 +28,7 @@ export const App = () => {
 
     return (
         <div>
+            <ExampleUseEffect/>
             <ExampleUseState/>
 
             {/*<ExampleReactMemo/>*/}
