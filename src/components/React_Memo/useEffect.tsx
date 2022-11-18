@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
 
-export const ExampleUseEffect = () => {
+export const SimpleExampleUseEffect = () => {
 
     console.log('ExampleUseEffect')
 
@@ -32,3 +32,4 @@ export const ExampleUseEffect = () => {
         {counter}
     </>
 }
+
